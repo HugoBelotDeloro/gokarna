@@ -3,6 +3,7 @@
   --dark-secondary-color: #2d333b;
   --dark-tertiary-color: #646464;
   --dark-text-color: white;
+  --dark-accent-color: #76FA9B;
 }
 
 html {
@@ -80,6 +81,10 @@ pre {
 
 .header-shadow {
   box-shadow: rgb(33, 38, 45) 0px -1px 0px 0px inset;
+}
+
+.katex-html, .accent {
+  color: var(--dark-accent-color);
 }
 
 /* TODO: Check if this is needed or not */
