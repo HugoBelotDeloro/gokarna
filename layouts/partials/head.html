@@ -6,6 +6,10 @@
         :root {
             --accent-color: {{ .Site.Params.AccentColor | default "#FF4D4D" }};
         }
+
+        html {
+            scroll-padding-top: 50px;
+        }
     </style>
 
     {{ $title := .Title | default .Site.Title }}
