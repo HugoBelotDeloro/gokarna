@@ -48,8 +48,15 @@
     <script src="/js/feather-icons.min.js"></script>
     <script src="/js/main.js"></script>
 
-    <!-- Option for user to inject custom html -->
+    <!-- Option for user to inject custom html globally -->
     {{ if .Site.Params.CustomHeadHTML }}
     {{ .Site.Params.CustomHeadHTML | safeHTML }}
+    {{ end }}
+
+    <!-- Option for user to inject custom css per page -->
+    {{ if isset .Params "css" }}
+    <style>
+      {{ .Params.css | safeCSS }}
+    </style>
     {{ end }}
 </head>
